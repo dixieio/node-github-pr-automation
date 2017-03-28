@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/dixieio/node-github-pr-automation/issues"
   },
-  "homepage": "https://github.com/dixieio/node-github-pr-automation#readme"
+  "homepage": "https://github.com/dixieio/node-github-pr-automation#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0"
+  }
 }
