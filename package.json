@@ -1,0 +1,26 @@
+{
+  "name": "node-github-pr-automation",
+  "version": "1.0.0",
+  "description": "Node module that automates git pull requests to master base of whats merged to development",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dixieio/node-github-pr-automation.git"
+  },
+  "keywords": [
+    "node",
+    "github",
+    "pull",
+    "requests",
+    "automation"
+  ],
+  "author": "Lars Krieger, @nopzen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dixieio/node-github-pr-automation/issues"
+  },
+  "homepage": "https://github.com/dixieio/node-github-pr-automation#readme"
+}
