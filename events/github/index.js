@@ -19,6 +19,8 @@ const GITHUB_EVENT_PULL_REQUEST = 'pull_request';
   pull_request
 */
 
+const pullRequest = require('./eventHandlers/pullRequest');
+
 const APPROVED_EVENTS = [
   GITHUB_EVENT_PULL_REQUEST
 ];
@@ -34,7 +36,7 @@ module.exports = (req, res) => {
   ) {
     return res.sendStatus(400);
   } else if (req.headers[GITHUB_EVENT_HEADER] === GITHUB_EVENT_PULL_REQUEST) {
-    console.log('Handle Pull Request.');
+    pullRequest(req.body.pull_request);
   }
 
   res.status(200);
