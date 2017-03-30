@@ -2,7 +2,7 @@ const router = require('express').Router();
 const github = require('./github/index');
 
 router.use((req, res, next) => {
-  console.log(req.method, req.url);
+  console.log(`Incomming hook from Github, method: ${req.method}`);
   next();
 });
 
