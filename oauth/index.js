@@ -38,7 +38,7 @@ router.get('/github/callback',
   passport.authenticate(
     'github',
     {
-      successRedirect: '/oauth/github/success',
+      successRedirect: '/',
       failureRedirect: '/oauth/github/error'
     }
   ),
@@ -46,6 +46,8 @@ router.get('/github/callback',
     return;
   }
 );
+
+//oauth/github/success
 
 router.get('/github/success', (req, res) => {
   res.send(`Successfully authenticated as: ${req.user.displayName}`);
