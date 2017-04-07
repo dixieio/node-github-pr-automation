@@ -31,13 +31,13 @@ const setAuth = auth => {
   });
 }
 
-const getAuth = (id, type) => {
+const getAuth = (type) => {
   const auths = getStoredAuths();
   if (!auths[type]) {
     return null;
   }
 
-  return auths[type].find(auth => auth.id === id && auth.type === type);
+  return auths[type].find(auth => auth.type === type);
 }
 
 module.exports = {

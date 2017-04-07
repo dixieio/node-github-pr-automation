@@ -9,7 +9,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
-  const user = Auth.getAuth(id, 'github');
+  const user = Auth.getAuth('github');
   done(null, user);
 });
 
@@ -33,7 +33,7 @@ passport.use(new GitHubStrategy({
   }
 ));
 
-router.get('/github', passport.authenticate('github'));
+router.get('/github', passport.authenticate('github', { scope: 'public_repo repo' }));
 router.get('/github/callback',
   passport.authenticate(
     'github',
