@@ -4,6 +4,6 @@
 2. `$ mv .env.example .env`
 3. Update the `.env` file with your variables
 4. `$ nodemon index.js`
-5. `Authenticate you application through the browser`
+5. Authenticate you application through the browser
 
 Enjoy a the tool :)
