@@ -8,7 +8,6 @@ const passport = require('passport');
 const app = express();
 const events = require('./events/index');
 const oauth = require('./oauth/index');
-const api = require('./api/index');
 
 app.use(session({
   secret: 'anything',
@@ -21,7 +20,6 @@ app.use(passport.session());
 
 app.use(`${process.env.SERVER_EVENTS_PATH}`, events);
 app.use(`${process.env.SERVER_OAUTH_PATH}`, oauth);
-app.use(`${process.env.SERVER_API_PATH}`, api);
 
 
 app.get('/', (req, res) => {

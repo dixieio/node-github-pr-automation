@@ -4,7 +4,8 @@
   "description": "Node module that automates git pull requests to master base of whats merged to development",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
